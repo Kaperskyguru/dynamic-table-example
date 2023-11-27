@@ -8,7 +8,9 @@ async function DynamicTableLocallyExample() {
 
   // Navigate to our app application
 
-  await driver.get("http://127.0.0.1:5500/table.html");
+  await driver.get(
+    "https://www.lambdatest.com/selenium-playground/table-data-download-demo"
+  );
 
   //  Example One
   const innerText1 = await driver
