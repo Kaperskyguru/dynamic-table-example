@@ -41,16 +41,16 @@ async function DynamicTableLocallyExample() {
 DynamicTableLocallyExample();
 
 async function DynamicTableWithLambdaTest() {
-  const USERNAME = ""; //replace with your username
-  const KEY = ""; //replace with your accesskey
+  const LT_USERNAME = ""; //replace with your username
+  const LT_ACCESS_KEY = ""; //replace with your accesskey
   const GRID_HOST = "hub.lambdatest.com/wd/hub";
 
   const capabilities = {
     browserName: "Chrome",
     browserVersion: "107.0",
     "LT:Options": {
-      username: USERNAME,
-      accessKey: KEY,
+      username: LT_USERNAME,
+      accessKey: LT_ACCESS_KEY,
       geoLocation: "US",
       platformName: "Windows 10",
       build: "Date Picker",
@@ -60,7 +60,7 @@ async function DynamicTableWithLambdaTest() {
     },
   };
 
-  const gridUrl = "https://" + USERNAME + ":" + KEY + "@" + GRID_HOST;
+  const gridUrl = "https://" + LT_USERNAME + ":" + LT_ACCESS_KEY + "@" + GRID_HOST;
   let driver;
   try {
     driver = await new Builder()
