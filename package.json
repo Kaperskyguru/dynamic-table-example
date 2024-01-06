@@ -1,0 +1,11 @@
+{
+  "name": "dynamic-table-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Kaperskyguru/dynamic-table-example.git",
+  "author": "Solomon Eseme <kaperskyguru@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "^4.16.0"
+  }
+}
