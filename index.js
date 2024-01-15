@@ -47,7 +47,7 @@ async function DynamicTableWithLambdaTest() {
 
   const capabilities = {
     browserName: "Chrome",
-    browserVersion: "107.0",
+    browserVersion: "latest",
     "LT:Options": {
       username: LT_USERNAME,
       accessKey: LT_ACCESS_KEY,
@@ -60,7 +60,8 @@ async function DynamicTableWithLambdaTest() {
     },
   };
 
-  const gridUrl = "https://" + LT_USERNAME + ":" + LT_ACCESS_KEY + "@" + GRID_HOST;
+  const gridUrl =
+    "https://" + LT_USERNAME + ":" + LT_ACCESS_KEY + "@" + GRID_HOST;
   let driver;
   try {
     driver = await new Builder()
